@@ -21,7 +21,7 @@ with open("a.J") as f:
         v=pp[k+1]
         m=pp[k+2]
         n=pp[k+3]
-        
+        k+=4
         p+=chr(int(hex((u-1)*4 + v)[2:]+hex((m-1)*4+n),16))
 with open("J.py","w+") as f3:
     f3.writelines(p)
